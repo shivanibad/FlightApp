@@ -1,0 +1,12 @@
+<div class="container  content-center">
+<div class="card" style="padding: 20px;" >
+<div class="row">
+<div class="form-group">From: <input type="text" name="from" class="form-control" placeholder="Departure City *" [(ngModel)]="from"/></div>
+<div class="form-group" style="padding-left: 10px;">To: <input type="text" name="to" class="form-control"  placeholder="Arrival City *" [(ngModel)]="to"/></div>
+<div class="form-group" style="padding-left: 10px;">Departure Date: <input type="text" name="departureDate" class="form-control"  placeholder="Departure Date *" [(ngModel)]="departureDate"/></div>
+
+<button class="btn btn-primary" (click)="find(from,to,departureDate)">Search</button>
+</div>
+</div>
+</div>
+

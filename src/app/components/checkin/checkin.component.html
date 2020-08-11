@@ -1,0 +1,32 @@
+<div class="container " style="padding: 5%;">
+    
+<h4>Review Details</h4>
+<div class="card">
+<h5>Flight Details</h5>
+
+<table>
+    <tr><td>Airlines:</td> <td>{{data?.flight?.operatingAirlines}}</td></tr>
+    <tr><td>Departure City:</td> <td>{{data?.flight?.departureCity}}</td></tr>
+    <tr><td>Arrival City:</td> <td>  {{data?.flight?.arrivalCity}}</td></tr>
+    <tr><td>Date Of Departure: </td> <td>{{data?.flight?.dateOfDeparture}}</td></tr>
+    <tr><td>Departure Time: </td> <td>{{data?.flight?.estimatedDepartureTime}}</td></tr>
+
+</table>
+</div>
+
+<div class="card">
+<h5>Passenger Details</h5>
+<table>
+    <tr><td> Passenger:</td><td> {{data?.passenger?.firstName}}  </td></tr>
+    <tr><td> Airlines:</td><td>  {{data?.passenger?.lastName}}   </td></tr>
+    <tr><td> Email: </td><td>   {{data?.passenger?.email}} </td></tr>
+    <tr><td> Phone:</td><td>  {{data?.passenger?.phone}}  </td></tr>
+</table>
+</div>
+<div class="card" style="text-align: center;">
+    
+<tr><td>Enter Number of Bags : </td><td><input type="text" [(ngModel)]="noOfBags"></td>
+
+</div>
+<button class="btn" style="text-decoration-color: white; background-color: #3931af;" (click)="checkin(noOfBags)">CheckIn</button>
+</div>
